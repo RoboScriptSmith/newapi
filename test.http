@@ -1,0 +1,17 @@
+GET http://localhost:3000/user
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name":"test",
+    "price" :50000
+}
+
+###
+PATCH http://localhost:3000/test
+
+###
+DELETE http://localhost:3000/test
