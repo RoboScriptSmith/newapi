@@ -10,5 +10,5 @@ const ProductSchema = new Schema({
     required: true,
   },
 });
-const Product = mongoose.model("prodcut", ProductSchema);
+const Product = mongoose.model("aditya", ProductSchema);
 module.exports = Product;

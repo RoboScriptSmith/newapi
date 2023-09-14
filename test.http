@@ -1,17 +1,53 @@
-GET http://localhost:3000/user
+
+GET http://localhost:3005/products/
 
 ###
-
-POST http://localhost:3000/products
+POST http://localhost:3005/products/
 Content-Type: application/json
 
 {
-    "name":"test",
+    "name":"update",
     "price" :50000
 }
 
-###
-PATCH http://localhost:3000/test
+
+### Get
+GET http://localhost:3005/products/
+### Update
+PATCH  http://localhost:3005/products/6500911dd1a9af81b0d48e8e
+Content-Type: application/json
+
+{
+    "name":"updated",
+    "price" :10000
+}
+###delete
+DELETE  http://localhost:3005/products/test2
+
+##tst
+
+GET http://localhost:3005/test?name=test&price=10
 
 ###
-DELETE http://localhost:3000/test
+
+POST http://localhost:3005/test/
+Content-Type: application/json
+
+{
+    "name":"test2",
+    "id" :10
+}
+###
+POST http://localhost:3005/test
+Content-Type: application/x-www-form-urlencoded
+
+name=test&price=50&school=xyz
+
+
+###
+
+
+POST http://localhost:3005/test
+Content-Type: application/x-www-form-urlencoded
+
+name=test&price=50
